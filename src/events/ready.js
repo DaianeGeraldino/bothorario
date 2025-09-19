@@ -12,7 +12,7 @@ const client = new Discord.Client({
     intents: intents 
 });
 
-client.on("ready", () => {
+client.on("clientReady", () => {
     console.log(`Bot foi iniciado, com ${client.users.cache.size} usuários, em ${client.channels.cache.size} canais e em ${client.guilds.cache.size} servidores`);
 });
 
